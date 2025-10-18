@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 
+
 test('Saving storage - correct load', async ({ page }) => {
     const someName = 'Vick';
     const nameField = page.getByRole('textbox', { name: 'Name (Required)' });
@@ -16,6 +17,7 @@ test('Saving storage - correct load', async ({ page }) => {
 
     // use the debugger here to illustrate the structure of storage
     const storage = await page.context().storageState();
+
     const z = 5;
 
 });
