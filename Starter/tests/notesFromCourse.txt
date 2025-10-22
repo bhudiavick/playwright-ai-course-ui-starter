@@ -1,0 +1,23 @@
+valentinos-magic-beans.click
+dummy website
+1. create an account
+2. add item to cart, place order, store order id, use order id and email to identify order placed
+
+Project structure
+Create valentinos-magic-beans folder
+run npm init playwright@latest
+usual typescript and test folder
+
+update base url in playwright.config.js
+
+
+1. Cart.spec.ts 
+    import + test (item added to cart)
+    select Brazialian nut and add to cart, expect this name to be in the cart
+    use npx playwright codegen
+    first item variable with p-6 .first()
+    get name and get price from this first() by chaining
+    click Add to cart button getByRole button Add to cart
+    click basket which will be a test id
+     
+
