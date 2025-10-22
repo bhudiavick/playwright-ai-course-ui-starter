@@ -114,3 +114,7 @@ function toggleOtherTextarea() {
     const selectedOptions = Array.from(improvementSelect.selectedOptions).map(option => option.value);
     otherTextContainer.style.display = selectedOptions.includes('others') ? 'block' : 'none';
 }
+
+function submitForm() {
+    return confirm('Do you really want to submit the form?')
+}
